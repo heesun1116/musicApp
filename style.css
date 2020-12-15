@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: #dedcee;
+    position: relative;
+}
+.app{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pads{
+    display: flex;
+    justify-content: space-evenly;
+}
+header{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+header h1{
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+    font-size: 35px;
+}
+
+header p{
+    font-size: 20px;
+}
+
+.pads{
+    width: 100%;
+    display: flex;
+}
+.pads > div{
+    height: 185px;
+    width: 185px;
+}
+
+.pad1,.pad2 ,.pad3, .pad4,.pad5,.pad6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #dedcee;
+    box-shadow:  26px 26px 52px #adacba, 
+                 -26px -26px 52px #ffffff;
+    transition: box-shadow 1.5s ease;
+}
+.pad1:active, .pad2:active ,.pad3:active, .pad4:active ,.pad5:active,.pad6:active{
+background: #dedcee;
+box-shadow: inset 20px 20px 60px #bdbbca, 
+            inset -20px -20px 60px #fffdff;
+}
+
+.pad1 i{
+    font-size: 35px;
+    color: #FF0099;
+}
+.pad2 i{
+    font-size: 35px;
+    color: #88dba3;
+}
+.pad3 i{
+    font-size: 35px;
+    color: #FBFFB9;
+}
+.pad4 i{
+    font-size: 35px;
+    color: #01FFF4;
+}
+.pad5 i{
+    font-size: 35px;
+    color: #6e0dd0;
+}
+.pad6 i{
+    font-size: 35px;
+    color: #ff6600;
+}
+
+@keyframes jump1{
+    0%{
+        bottom: 50%;
+        left: 10%;
+    }
+    25%{
+        bottom: 0%;
+        left: 30%;
+    }
+
+    100%{
+        bottom: 100%;
+        left: 100%;
+    }
+
+}
+@keyframes jump2{
+    0%{
+        bottom: 50%;
+        left: 20%;
+    }
+    25%{
+        bottom: 0%;
+        left: 50%;
+    }
+
+    100%{
+        bottom: 100%;
+        left: 110%;
+    }
+
+}
+@keyframes jump3{
+    0%{
+        bottom: 50%;
+        left: 40%;
+    }
+    25%{
+        bottom: 0%;
+        left: 70%;
+    }
+
+    100%{
+        bottom: 100%;
+        left: 120%;
+    }
+
+}
+@keyframes jump4{
+    0%{
+        bottom: 50%;
+        left: 60%;
+    }
+    25%{
+        bottom: 0%;
+        left: 40%;
+    }
+
+    100%{
+        bottom: 100%;
+        left: 0%;
+    }
+
+}
+@keyframes jump5{
+    0%{
+        bottom: 50%;
+        left: 75%;
+    }
+    25%{
+        bottom: 0%;
+        left: 60%;
+    }
+
+    100%{
+        bottom: 100%;
+        left: -10%;
+    }
+
+}
+@keyframes jump6{
+    0%{
+        bottom: 50%;
+        left: 90%;
+    }
+    25%{
+        bottom: 0%;
+        left: 80%;
+    }
+
+    100%{
+        bottom: 100%;
+        left: -30%;
+    }
+
+}
+
+.visual > div{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    bottom: 0;
+    left: 20%;
+    z-index: -1;
+}
